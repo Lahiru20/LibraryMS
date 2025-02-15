@@ -1,0 +1,107 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="AddBooks" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a1f690a3-5977-4467-85f8-6b0bcd5b7210">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="LibraryMS"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<query language="SQL"><![CDATA[SELECT * FROM members;]]></query>
+	<field name="member_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="member_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="member_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="members"/>
+	</field>
+	<field name="full_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="full_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="full_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="members"/>
+	</field>
+	<field name="phone_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="phone_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="phone_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="members"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="members"/>
+	</field>
+	<field name="membership_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="membership_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="membership_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="members"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="70" splitType="Stretch">
+		<element kind="staticText" uuid="6f9c1004-6140-4588-9c4f-d75824835765" x="146" y="10" width="263" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[LibraryManagerPro]]></text>
+		</element>
+		<element kind="staticText" uuid="8e16dabd-2e54-471b-9652-83e1d55379ec" x="146" y="43" width="263" height="22" hTextAlign="Center" style="SubTitle">
+			<text><![CDATA[Member Report]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="36" splitType="Stretch">
+		<element kind="staticText" uuid="a140e9e2-1012-49a7-aa0a-cfb855517ddb" x="0" y="0" width="111" height="30" bold="true" hTextAlign="Center">
+			<text><![CDATA[Member ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0489a3ff-d194-4d5b-988a-c50627839b44"/>
+		</element>
+		<element kind="staticText" uuid="c962fd5a-c955-424a-8a42-a418c1f6ee2b" x="111" y="0" width="111" height="30" bold="true" hTextAlign="Center">
+			<text><![CDATA[Full Name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d214774-f5cc-4a6e-a0cc-315004736e18"/>
+		</element>
+		<element kind="staticText" uuid="333d827c-d22d-43c5-8381-61db291f6218" x="222" y="0" width="111" height="30" bold="true" hTextAlign="Center">
+			<text><![CDATA[Phone Number]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6a6fd38-5507-41fc-83b9-7822b6e13921"/>
+		</element>
+		<element kind="staticText" uuid="e77e50e4-2210-4ed7-b4ff-d79464fa3fcc" x="333" y="0" width="111" height="30" bold="true" hTextAlign="Center">
+			<text><![CDATA[Address]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76654b30-1dc3-45b1-980c-500304101468"/>
+		</element>
+		<element kind="staticText" uuid="ab28d16d-e9e1-44c7-acc9-72566fd4909c" x="444" y="0" width="111" height="30" bold="true" hTextAlign="Center">
+			<text><![CDATA[Membership Date]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="963fe436-21d5-4d31-90e3-98062cb7d338"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<element kind="textField" uuid="ea4fb417-2c5a-4dc4-ac5e-8f4c61467769" x="0" y="0" width="111" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{member_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0489a3ff-d194-4d5b-988a-c50627839b44"/>
+			</element>
+			<element kind="textField" uuid="2f20f391-fe43-462c-a267-c9777a3c12ef" x="111" y="0" width="111" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{full_name}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d214774-f5cc-4a6e-a0cc-315004736e18"/>
+			</element>
+			<element kind="textField" uuid="6e1b1bad-dd47-4e86-88f5-bcf6964983f2" x="222" y="0" width="111" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{phone_number}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6a6fd38-5507-41fc-83b9-7822b6e13921"/>
+			</element>
+			<element kind="textField" uuid="5456a944-a0bb-4658-8e45-340723b4ac32" x="333" y="0" width="111" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{address}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76654b30-1dc3-45b1-980c-500304101468"/>
+			</element>
+			<element kind="textField" uuid="64fcdd8d-c600-4e22-a133-589a7fa90654" x="444" y="0" width="111" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{membership_date}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="963fe436-21d5-4d31-90e3-98062cb7d338"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="20" splitType="Stretch">
+		<element kind="textField" uuid="deb23d85-47bb-4de6-978e-113ff117188c" x="433" y="0" width="80" height="20" fontSize="10.0" bold="false" hTextAlign="Right" style="Column header">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="c6ce76ba-6e11-41e2-9415-72dc2eff001b" x="513" y="0" width="40" height="20" fontSize="10.0" evaluationTime="Report" bold="false" style="Column header">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="5a79d2a0-bcde-4ad5-adf0-c4eb2066f6dd" x="0" y="0" width="197" height="20" fontSize="10.0" pattern="EEEEE dd MMMMM yyyy" bold="false" style="Column header">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>

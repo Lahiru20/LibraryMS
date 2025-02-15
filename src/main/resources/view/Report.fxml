@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="389.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formcontroller.ReportFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="357.0" layoutY="44.0" stroke="GHOSTWHITE" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="247.0" layoutY="8.0" text="Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chbox_books" layoutX="121.0" layoutY="96.0" mnemonicParsing="false" text="Books">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chbox_borrowedbooks" layoutX="121.0" layoutY="138.0" mnemonicParsing="false" text="Borrowed Books">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chbox_members" layoutX="122.0" layoutY="284.0" mnemonicParsing="false" text="Members">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chbox_returnbooks" layoutX="121.0" layoutY="217.0" mnemonicParsing="false" text="Returned Books">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="439.0" layoutY="352.0" mnemonicParsing="false" onAction="#GenerateReportOnAction" prefHeight="35.0" prefWidth="139.0" style="-fx-background-color: #000000;" text="Generate Reports" textFill="WHITE" />
+      <Line endX="293.79998779296875" layoutX="212.0" layoutY="130.0" startX="-100.0" />
+      <Line endX="293.79998779296875" layoutX="212.0" layoutY="199.0" startX="-100.0" />
+      <Line endX="290.4000244140625" layoutX="213.0" layoutY="270.0" startX="-100.0" />
+      <Line endX="290.4000244140625" layoutX="213.0" layoutY="332.0" startX="-100.0" />
+      <Line endX="293.0" layoutX="212.0" layoutY="89.0" startX="-100.0" />
+      <Line endX="-9.5999755859375" endY="195.0" layoutX="302.0" layoutY="137.0" startX="-9.5999755859375" startY="-46.399993896484375" />
+      <Line endX="-9.5999755859375" endY="196.5999755859375" layoutX="122.0" layoutY="137.0" startX="-9.5999755859375" startY="-47.20001220703125" />
+      <Line endX="-9.5999755859375" endY="195.20001220703125" layoutX="514.0" layoutY="136.0" startX="-9.5999755859375" startY="-46.20001220703125" />
+      <Label layoutX="114.0" layoutY="65.0" text="Report Type">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="65.0" text="Record No.">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_member_count" layoutX="410.0" layoutY="284.0" prefHeight="26.0" prefWidth="75.0" style="-fx-border-color: #000000; -fx-border-radius: 4px;" text="1" />
+      <Label layoutX="308.0" layoutY="289.0" text="Member Count : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_book_count" layoutX="409.0" layoutY="96.0" prefHeight="26.0" prefWidth="75.0" style="-fx-border-color: #000000; -fx-border-radius: 4px;" text="1" />
+      <Label layoutX="307.0" layoutY="101.0" text="Books Count : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="209.0" prefHeight="18.0" prefWidth="26.0" text="to">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_rb_nowdate" editable="false" layoutX="304.0" layoutY="236.0" prefHeight="26.0" prefWidth="147.0" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <Label layoutX="460.0" layoutY="140.0" prefHeight="18.0" prefWidth="26.0" text="to">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_bb_nowdate" editable="false" layoutX="304.0" layoutY="167.0" prefHeight="26.0" prefWidth="147.0" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <DatePicker fx:id="dt_borrowed_books" editable="false" layoutX="303.0" layoutY="136.0" prefHeight="26.0" prefWidth="147.0" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <DatePicker fx:id="dt_returned_books" editable="false" layoutX="304.0" layoutY="205.0" prefHeight="26.0" prefWidth="147.0" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+   </children>
+</AnchorPane>

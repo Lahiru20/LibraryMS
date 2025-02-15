@@ -1,0 +1,120 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="AddBooks" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a1f690a3-5977-4467-85f8-6b0bcd5b7210">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="LibraryMS"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<query language="SQL"><![CDATA[SELECT * FROM borrowedbooks;]]></query>
+	<field name="borrow_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="borrow_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="borrow_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="borrowedbooks"/>
+	</field>
+	<field name="book_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="book_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="book_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="borrowedbooks"/>
+	</field>
+	<field name="member_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="member_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="member_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="borrowedbooks"/>
+	</field>
+	<field name="staff_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="staff_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="staff_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="borrowedbooks"/>
+	</field>
+	<field name="borrow_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="borrow_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="borrow_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="borrowedbooks"/>
+	</field>
+	<field name="is_borrowed" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="is_borrowed"/>
+		<property name="com.jaspersoft.studio.field.label" value="is_borrowed"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="borrowedbooks"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="73" splitType="Stretch">
+		<element kind="staticText" uuid="6f9c1004-6140-4588-9c4f-d75824835765" x="146" y="10" width="263" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[LibraryManagerPro]]></text>
+		</element>
+		<element kind="staticText" uuid="77d3784c-b139-446f-bb68-ba7c87bfeb0b" x="146" y="40" width="263" height="30" fontSize="19.0" hTextAlign="Center">
+			<text><![CDATA[Borrowed Books Report]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="36" splitType="Stretch">
+		<element kind="staticText" uuid="419d8f22-9ffc-4c46-8343-7215bde20d40" x="0" y="0" width="95" height="30" fontSize="12.0" bold="true">
+			<text><![CDATA[ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70c10a07-1ecb-4bfa-8b88-0f11a053b649"/>
+		</element>
+		<element kind="staticText" uuid="b457b4e0-b5b5-43cd-8cc9-fae154e2b58c" x="95" y="0" width="92" height="30" fontSize="12.0" bold="true">
+			<text><![CDATA[Book ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49d43367-9f81-458e-b8f7-f7a9c628c6e7"/>
+		</element>
+		<element kind="staticText" uuid="36d47dfd-44f9-434f-b7b0-c280a5d260d2" x="187" y="0" width="92" height="30" fontSize="12.0" bold="true">
+			<text><![CDATA[Member ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="97eabf74-cdb4-41e2-a396-7aa408780710"/>
+		</element>
+		<element kind="staticText" uuid="7758bfb5-e41d-4a38-a7c1-57439795b1bf" x="279" y="0" width="92" height="30" fontSize="12.0" bold="true">
+			<text><![CDATA[Staff ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dbacf8ba-1290-4dc8-816c-f87d003feb6a"/>
+		</element>
+		<element kind="staticText" uuid="55e105d1-9779-4319-bd17-b41811adcb4c" x="371" y="0" width="92" height="30" fontSize="12.0" bold="true">
+			<text><![CDATA[Borrow Date]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd4c97f0-4c12-4ff5-8ebe-ac4beac45467"/>
+		</element>
+		<element kind="staticText" uuid="8f08415d-62d9-489a-b39a-f6882a77fe68" x="463" y="0" width="92" height="30" fontSize="12.0" bold="true">
+			<text><![CDATA[is_Borrowed]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d36024a9-b48c-4f06-9e65-b813e3ba4d99"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<element kind="textField" uuid="fd7d0189-161b-447a-9582-e783ff47e908" x="0" y="0" width="95" height="30">
+				<expression><![CDATA[$F{borrow_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70c10a07-1ecb-4bfa-8b88-0f11a053b649"/>
+			</element>
+			<element kind="textField" uuid="f5646595-d6a8-4d72-8101-0dc43c4dd9f8" x="95" y="0" width="92" height="30">
+				<expression><![CDATA[$F{book_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49d43367-9f81-458e-b8f7-f7a9c628c6e7"/>
+			</element>
+			<element kind="textField" uuid="fb069375-3051-4799-ab15-28387718dbff" x="187" y="0" width="92" height="30">
+				<expression><![CDATA[$F{member_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="97eabf74-cdb4-41e2-a396-7aa408780710"/>
+			</element>
+			<element kind="textField" uuid="efbd8a09-0841-4650-a504-4b46d29fa4b2" x="279" y="0" width="92" height="30">
+				<expression><![CDATA[$F{staff_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dbacf8ba-1290-4dc8-816c-f87d003feb6a"/>
+			</element>
+			<element kind="textField" uuid="c909ffa2-e735-4668-bc9d-9ba3a8fd336b" x="371" y="0" width="92" height="30">
+				<expression><![CDATA[$F{borrow_date}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd4c97f0-4c12-4ff5-8ebe-ac4beac45467"/>
+			</element>
+			<element kind="textField" uuid="b1bc13cc-1229-4786-9f04-864d1b71160e" x="463" y="0" width="92" height="30">
+				<expression><![CDATA[$F{is_borrowed}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d36024a9-b48c-4f06-9e65-b813e3ba4d99"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="20" splitType="Stretch">
+		<element kind="textField" uuid="deb23d85-47bb-4de6-978e-113ff117188c" x="433" y="0" width="80" height="20" fontSize="10.0" bold="false" hTextAlign="Right" style="Column header">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="c6ce76ba-6e11-41e2-9415-72dc2eff001b" x="513" y="0" width="40" height="20" fontSize="10.0" evaluationTime="Report" bold="false" style="Column header">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="5a79d2a0-bcde-4ad5-adf0-c4eb2066f6dd" x="0" y="0" width="197" height="20" fontSize="10.0" pattern="EEEEE dd MMMMM yyyy" bold="false" style="Column header">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboard_frame" prefHeight="383.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formcontroller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="455.0" layoutX="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cover_dashboard.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="16.0" prefHeight="46.0" prefWidth="134.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="170.0" layoutY="90.0" mnemonicParsing="false" onAction="#btn_member_Action" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: #000000;" text="Member" textFill="WHITE" />
+      <Button layoutX="25.0" layoutY="90.0" mnemonicParsing="false" onAction="#btn_Addbooks_Action" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: #000000;" text="Add Books" textFill="WHITE" />
+      <Button layoutX="25.0" layoutY="178.0" mnemonicParsing="false" onAction="#btn_Staff_Action" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: #000000;" text="Staff " textFill="WHITE" />
+      <Button layoutX="170.0" layoutY="178.0" mnemonicParsing="false" onAction="#Borrowed_Bokkss_Action" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: #000000;" text="Borrowed Books" textFill="WHITE" />
+      <Button layoutX="26.0" layoutY="267.0" mnemonicParsing="false" onAction="#btn_Return_book_Action" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: #000000;" text="Return Books" textFill="WHITE" />
+      <Button layoutX="172.0" layoutY="267.0" mnemonicParsing="false" onAction="#btn_Report" prefHeight="74.0" prefWidth="134.0" style="-fx-background-color: #000000;" text="Report" textFill="WHITE" />
+      <Button layoutX="476.0" layoutY="356.0" mnemonicParsing="false" onAction="#Close_Action" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #000000; -fx-border-color: #ffffff; -fx-border-width: 2px; -fx-border-radius: 4px;" text="Close" textFill="WHITE" />
+      <Button layoutX="349.0" layoutY="356.0" mnemonicParsing="false" onAction="#Logout_Action" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #000000; -fx-border-color: #ffffff; -fx-border-width: 2px; -fx-border-radius: 4px;" text="Logout" textFill="WHITE" />
+   </children>
+</AnchorPane>

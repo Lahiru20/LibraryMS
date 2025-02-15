@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formcontroller.MemberFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="63.0" layoutX="-16.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="616.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="406.0" layoutY="53.0" stroke="GHOSTWHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="206.0" layoutY="7.0" prefHeight="42.0" prefWidth="198.0" text="Library Members" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_memberid" layoutX="93.0" layoutY="129.0" prefHeight="26.0" prefWidth="198.0" promptText="Member ID" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_membername" layoutX="323.0" layoutY="130.0" prefHeight="26.0" prefWidth="198.0" promptText="Full Name" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_phoneNumber" layoutX="93.0" layoutY="179.0" prefHeight="26.0" prefWidth="198.0" promptText="Phone Number" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Adrees" layoutX="323.0" layoutY="179.0" prefHeight="26.0" prefWidth="198.0" promptText="Address" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <Label fx:id="lbl_Date" layoutX="74.0" layoutY="86.0" prefHeight="18.0" prefWidth="172.0" text="YY/MM/DD" />
+      <TableView fx:id="table_Memeber" layoutY="305.0" prefHeight="158.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colum_memberid" prefWidth="78.4000244140625" text="ID" />
+          <TableColumn fx:id="colum_full_name" prefWidth="119.20001220703125" text="Full Name" />
+            <TableColumn fx:id="colum_PhoneNumber" prefWidth="125.60003662109375" text="Phone Number" />
+            <TableColumn fx:id="colum_Adreess" prefWidth="122.39996337890625" text="Address" />
+            <TableColumn fx:id="colum_Headmastership" prefWidth="160.00006103515625" text="Memebership Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="40.0" layoutY="238.0" mnemonicParsing="false" onAction="#btn_Search_Action" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #000000;" text="Search" textFill="WHITE" />
+      <Button layoutX="153.0" layoutY="238.0" mnemonicParsing="false" onAction="#btn_Add_Action" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #000000;" text="Add" textFill="WHITE" />
+      <Button layoutX="269.0" layoutY="238.0" mnemonicParsing="false" onAction="#btn_View_Action" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #000000;" text="View" textFill="WHITE" />
+      <Button layoutX="385.0" layoutY="238.0" mnemonicParsing="false" onAction="#btn_update_Action" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Update" textFill="WHITE" />
+      <Button layoutX="488.0" layoutY="237.0" mnemonicParsing="false" onAction="#btn_Delete_Action" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Delete" textFill="WHITE" />
+      <Label layoutX="20.0" layoutY="86.0" prefHeight="18.0" prefWidth="62.0" text=" Date :">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="112.0" text="Member ID">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="113.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="164.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="164.0" text="Address">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

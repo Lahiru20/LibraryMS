@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="602.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formcontroller.TakeBooksFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="560.0" layoutY="42.0" stroke="GHOSTWHITE" strokeType="INSIDE" width="800.0" />
+      <Label layoutX="309.0" prefHeight="44.0" prefWidth="198.0" text="Borrowed Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo_Bookid" layoutX="46.0" layoutY="71.0" onAction="#Combo_Book_Action" prefWidth="150.0" promptText="Book ID" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Title" editable="false" layoutX="207.0" layoutY="70.0" prefHeight="26.0" prefWidth="127.0" promptText="Title" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Author" editable="false" layoutX="346.0" layoutY="70.0" prefHeight="26.0" prefWidth="127.0" promptText="Author" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_ISBN" editable="false" layoutX="484.0" layoutY="70.0" prefHeight="26.0" prefWidth="127.0" promptText="ISBN" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_lanvage" editable="false" layoutX="621.0" layoutY="71.0" prefHeight="26.0" prefWidth="127.0" promptText="Language" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <ComboBox fx:id="combo_Memberid" layoutX="46.0" layoutY="138.0" onAction="#combo_Memeberid_Action" prefHeight="26.0" prefWidth="150.0" promptText="Member ID" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_full_name" editable="false" layoutX="207.0" layoutY="140.0" prefHeight="26.0" prefWidth="127.0" promptText="Full Name" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_PhoneNumber" editable="false" layoutX="346.0" layoutY="140.0" prefHeight="26.0" prefWidth="127.0" promptText="Phone Number" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Address" editable="false" layoutX="484.0" layoutY="140.0" prefHeight="26.0" prefWidth="127.0" promptText="Address" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Membership" editable="false" layoutX="621.0" layoutY="140.0" prefHeight="26.0" prefWidth="127.0" promptText="Membership Date" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <ComboBox fx:id="combo_Staffid" layoutX="46.0" layoutY="211.0" onAction="#combo_staffid_Action" prefWidth="150.0" promptText="Staff ID" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_email" editable="false" layoutX="208.0" layoutY="211.0" prefHeight="26.0" prefWidth="127.0" promptText="Email" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_name" editable="false" layoutX="346.0" layoutY="211.0" prefHeight="26.0" prefWidth="127.0" promptText="Name" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_pohneNumber" editable="false" layoutX="484.0" layoutY="211.0" prefHeight="26.0" prefWidth="127.0" promptText="Phone Number" style="-fx-background-color: #fffff0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TableView fx:id="brrowed_table" layoutY="380.0" prefHeight="222.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="colum_borrowedid" prefWidth="125.60002136230469" text="Borrowed ID" />
+            <TableColumn fx:id="colum_bookid" prefWidth="128.79998779296875" text="Book ID" />
+            <TableColumn fx:id="colum_memeberid" prefWidth="122.4000244140625" text="Member ID" />
+            <TableColumn fx:id="colum_staffid" prefWidth="128.0" text="Staff ID" />
+            <TableColumn fx:id="colum_brrow_date" prefWidth="128.79998779296875" text="Borrow Date" />
+            <TableColumn fx:id="colum_is_broowed" prefWidth="182.39996337890625" text="is Borrowed" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="281.0" prefHeight="27.0" prefWidth="52.0" text="Date :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_date" layoutX="102.0" layoutY="281.0" prefHeight="26.0" prefWidth="134.0" text="yy/mm/dd">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="659.0" layoutY="336.0" mnemonicParsing="false" onAction="#take_Books_Action" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #000000;" text="Take Books" textFill="WHITE" />
+      <TextField fx:id="txt_brrrowedid" layoutX="208.0" layoutY="280.0" prefHeight="26.0" prefWidth="134.0" promptText="Borrowed_ID" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_yes_or_No" layoutX="357.0" layoutY="281.0" prefHeight="26.0" prefWidth="118.0" promptText="Yes or No" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <Label layoutX="208.0" layoutY="53.0" text="Title">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="54.0" text="Author">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="54.0" text="ISBN">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="54.0" text="Language">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="121.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="122.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="122.0" text="Address">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="122.0" text="Membership Date">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="194.0" text="Email">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="195.0" text="Name">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="195.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="263.0" text="Borrowed ID">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="264.0" text="Borrowed Status">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

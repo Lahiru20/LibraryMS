@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formcontroller.AddBookFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="50.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="400.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="219.0" layoutY="1.0" prefHeight="47.0" prefWidth="170.0" text="Books Mangement" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_Bookid" layoutX="101.0" layoutY="81.0" prefHeight="26.0" prefWidth="186.0" promptText="Books ID" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="Txt_title" layoutX="313.0" layoutY="81.0" prefHeight="26.0" prefWidth="186.0" promptText="Title" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Author" layoutX="100.0" layoutY="140.0" prefHeight="26.0" prefWidth="186.0" promptText="Author" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_Isbn" layoutX="313.0" layoutY="140.0" prefHeight="26.0" prefWidth="186.0" promptText="ISBN" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txt_lanvage" layoutX="220.0" layoutY="201.0" prefHeight="26.0" prefWidth="186.0" promptText="Language" style="-fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TableView fx:id="tabel_Books" layoutX="-2.0" layoutY="301.0" prefHeight="146.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colum_booksid" prefWidth="132.79998779296875" text="Books ID" />
+          <TableColumn fx:id="colum_tiittle" prefWidth="102.4000244140625" text="Title" />
+            <TableColumn fx:id="colum_Author" prefWidth="107.20001220703125" text="Author" />
+            <TableColumn fx:id="Colum_isbn" prefWidth="128.79998779296875" text="ISBN" />
+            <TableColumn fx:id="Colum_Lanvage" prefWidth="131.99996948242188" text="Language" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="257.0" mnemonicParsing="false" onAction="#btn_Add_Action" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #000000;" text="Add" textFill="WHITE" />
+      <Button layoutX="140.0" layoutY="259.0" mnemonicParsing="false" onAction="#btn_Search_Action" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #000000;" text="Search" textFill="WHITE" />
+      <Button layoutX="263.0" layoutY="259.0" mnemonicParsing="false" onAction="#btn_View_Action" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #000000;" text="View" textFill="WHITE" />
+      <Button layoutX="390.0" layoutY="257.0" mnemonicParsing="false" onAction="#btn_update_Action" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #000000;" text="Update" textFill="WHITE" />
+      <Button layoutX="504.0" layoutY="258.0" mnemonicParsing="false" onAction="#btn_Delete_Action" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #000000;" text="Delete" textFill="WHITE" />
+      <Label layoutX="101.0" layoutY="66.0" text="Books ID">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="66.0" text="Title">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="126.0" text="Author">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="126.0" text="ISBN">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="186.0" text="Language">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

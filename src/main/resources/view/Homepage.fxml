@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="homepage_frame" prefHeight="400.0" prefWidth="262.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formcontroller.HomepageFormController">
+   <children>
+      <ImageView fitHeight="422.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cover_dashboard.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="403.0" opacity="0.64" stroke="BLACK" strokeType="INSIDE" width="268.0" />
+      <Button layoutX="80.0" layoutY="271.0" mnemonicParsing="false" onAction="#Lets_Go_Action" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #000000; -fx-border-color: #ffffff; -fx-border-radius: 4px; -fx-border-width: 2px;" text="Continue" textFill="WHITE" />
+      <ImageView fitHeight="154.0" fitWidth="216.0" layoutX="28.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo_white.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
