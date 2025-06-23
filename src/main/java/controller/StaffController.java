@@ -24,7 +24,7 @@ public class StaffController implements StaffService {
         ArrayList<Staff> staff=new ArrayList<>();
         try {
             Statement statement= connection.createStatement();
-            ResultSet resultSet=statement.executeQuery("SELECT *FROM staff");
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM staff");
             while (resultSet.next()){
                 staff.add(
                         new Staff(
